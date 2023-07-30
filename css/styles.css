@@ -1071,3 +1071,32 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    border-radius: 4px;
    outline: transparent;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+   .header__nav > .list,
+   .header__contacts > .list {
+      display: none;
+   }
+   .nav-list-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+   .contact-list-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 48px;
+   }
+   .header__nav > .link {
+      padding: 22px 0;
+   }
+   .current,
+   .current-portfolio::after {
+      display: none;
+   }
+}
