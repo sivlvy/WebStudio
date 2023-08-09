@@ -1231,6 +1231,9 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .section.main {
       background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/main_bg_mobile@2x.jpg');
    }
+   .input-subscribe {
+      width: 320px
+   }
 }
 
 
@@ -1256,23 +1259,7 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    }
 }
 
-@media (min-width: 320px) and (max-width: 428px) {
-   .modal-open {
-      width: 92%;
-   }
-   .contact-tel-link {
-      font-size: 24px;
-   }
-   .mobile-list-link {
-      margin-bottom: 20px;
-   }
-   .mobile-list-link a {
-      font-size: 24px;
-   }
-   .social-links-list {
-      gap: 26px;
-   }
-}
+
 
 @media (min-width: 320px) and (max-width: 768px) {
    .modal {
@@ -1321,8 +1308,8 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
       font-weight: 500;
    }
    .section.list {
-      max-width: 428px;
       padding: 96px 0;
+      margin: 0 auto;
    }
    .list.item {
       margin-bottom: 72px;
@@ -1407,10 +1394,35 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    }
 }
 
+@media (min-width: 320px) and (max-width: 428px) {
+   .modal-open {
+      width: 92%;
+   }
+   .contact-tel-link {
+      font-size: 24px;
+   }
+   .mobile-list-link {
+      margin-bottom: 20px;
+   }
+   .mobile-list-link a {
+      font-size: 24px;
+   }
+   .social-links-list {
+      gap: 26px;
+   }
+   .input-subscribe {
+      width: 290px;
+   }
+}
 
 
-
-
+@media screen and (min-width: 428px) {
+   .section .container .list {
+      width: 396px;
+      margin: 0 auto;
+      margin-bottom: 72px;
+   }
+}
 
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -1476,14 +1488,9 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .team__item:nth-child(3) {
       margin-bottom: 0;
    }
-   .list__title {
-      font-size: 20px;
-      font-weight: 500;
-      text-align: center;
-   }
    .list__descr {
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 500;
    }
    .customers-item {
       display: flex;justify-content: space-around;
@@ -1528,9 +1535,13 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .section.categories .list.first {
       justify-content: center;
    }
+   .container-customers {
+      width: 768px;
+      margin: 0 auto;
+   }
    
    .section.customers {
-      max-width: 582px;
+      min-width: 768px;
       margin: 0 auto;
    }
    .customers-list {
