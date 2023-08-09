@@ -1231,9 +1231,7 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .section.main {
       background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/main_bg_mobile@2x.jpg');
    }
-   .input-subscribe {
-      width: 320px
-   }
+
 }
 
 
@@ -1248,9 +1246,12 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .section.main {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/main_bg_tablet@2x.jpg');
    }
+      .input-subscribe {
+      width: 396px;
+   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px;) {
    .menu-toggle {
       display: none;
    }
@@ -1259,7 +1260,26 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    }
 }
 
-
+@media (min-width: 320px) and (max-width: 428px) {
+   .modal-open {
+      width: 92%;
+   }
+   .contact-tel-link {
+      font-size: 24px;
+   }
+   .mobile-list-link {
+      margin-bottom: 20px;
+   }
+   .mobile-list-link a {
+      font-size: 24px;
+   }
+   .social-links-list {
+      gap: 26px;
+   }
+   .input-subscribe {
+      width: 290px;
+   }
+}
 
 @media (min-width: 320px) and (max-width: 768px) {
    .modal {
@@ -1308,6 +1328,7 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
       font-weight: 500;
    }
    .section.list {
+      max-width: 428px;
       padding: 96px 0;
       margin: 0 auto;
    }
@@ -1377,9 +1398,7 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
       flex-direction: column;
    }
 
-   .input-subscribe {
-      width: 396px;
-   }
+
    .subscribe-btn {
       width: 165px;
       margin: 0 auto;
@@ -1394,35 +1413,10 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    }
 }
 
-@media (min-width: 320px) and (max-width: 428px) {
-   .modal-open {
-      width: 92%;
-   }
-   .contact-tel-link {
-      font-size: 24px;
-   }
-   .mobile-list-link {
-      margin-bottom: 20px;
-   }
-   .mobile-list-link a {
-      font-size: 24px;
-   }
-   .social-links-list {
-      gap: 26px;
-   }
-   .input-subscribe {
-      width: 290px;
-   }
-}
 
 
-@media screen and (min-width: 428px) {
-   .section .container .list {
-      width: 396px;
-      margin: 0 auto;
-      margin-bottom: 72px;
-   }
-}
+
+
 
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -1451,11 +1445,12 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
       margin-bottom: 36px;
    }
    .section .container .list {
-      width: 100%;
+      width: 768px;
       flex-direction: row;
       flex-basis: calc((100% - 24px) / 2);
       flex-wrap: wrap;
       margin-bottom: 0;
+      margin: 0 auto;
    }
    .list__title {
       font-weight: 700;
@@ -1463,6 +1458,13 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
       margin: 0;
       text-align: left;
    }
+   .person {
+      font-size: 20px;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 8px;
+   }
+
    .list.item:nth-child(1) {
       margin-bottom: 72px;
    }
@@ -1471,9 +1473,6 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    }
    .list-logo {
       display: none;
-   }
-   .list__descr {
-      font-weight: 500;
    }
    .team-list {
       justify-content: center;
@@ -1491,6 +1490,9 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .list__descr {
       font-size: 16px;
       font-weight: 500;
+   }
+   .team-descr {
+      font-weight: 400;
    }
    .customers-item {
       display: flex;justify-content: space-around;
@@ -1535,17 +1537,18 @@ input[type='checkbox']:focus + .text-modal .span-checkbox-icon {
    .section.categories .list.first {
       justify-content: center;
    }
-   .container-customers {
-      width: 768px;
-      margin: 0 auto;
-   }
    
    .section.customers {
-      min-width: 768px;
+      max-width: 582px;
       margin: 0 auto;
    }
    .customers-list {
       display: flex;
       flex-wrap: wrap;
+   }
+}
+@media screen and (min-width: 768px) {
+   .menu-toggle {
+      display: none;
    }
 }
